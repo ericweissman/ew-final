@@ -37,7 +37,6 @@ export class App extends Component {
 export const mapStateToProps = (state) => ({
   isLoading: state.isLoading,
   hasErrored: state.hasErrored,
-  presidents: state.presidents,
 })
 
 export const mapDispatchToProps = (dispatch) => ({

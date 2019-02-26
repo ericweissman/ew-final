@@ -12,14 +12,12 @@ describe('App', () => {
       const mockState = {
         isLoading: false,
         hasErrored: '',
-        presidents: [{ name: 'BarryO' }],
         fakeState: 'hotdogs',
       }
 
       const expected = {
         isLoading: false,
         hasErrored: '',
-        presidents: [{ name: 'BarryO' }],
       }
 
       const mappedProps = mapStateToProps(mockState)
