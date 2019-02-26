@@ -18,7 +18,7 @@ export class App extends Component {
   }
 
   render() {
-    const { isLoading, hasErrored, presidents } = this.props
+    const { isLoading, hasErrored } = this.props
     return (
       <div className="App">
         <h1>Presidents and Assholes</h1>

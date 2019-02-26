@@ -12,3 +12,8 @@ export const getPresidentsSuccess = (presidents) => ({
   type: 'GET_PRESIDENTS_SUCCESS',
   presidents
 })
+
+export const setPartyFilter = (party) => ({
+  type: 'SET_PARTY_FILTER',
+  party
+})
