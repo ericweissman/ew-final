@@ -1,6 +1,6 @@
 import { isLoading, hasErrored, getPresidentsSuccess } from '../actions'
 
-export const fetchStaff = () => {
+export const fetchData = () => {
   return async (dispatch) => {
     try {
       dispatch(isLoading(true))
@@ -16,3 +16,4 @@ export const fetchStaff = () => {
     }
   }
 }
+
