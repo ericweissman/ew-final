@@ -47,4 +47,15 @@ describe('actions', () => {
     const result = actions.getPresidentsSuccess(mockPresidents)
     expect(result).toEqual(expected)
   })
+
+  it('should have a type of SetPartyFIlter', () => {
+    const mockParty = 'Democratic'
+    const expected = {
+      type: 'SET_PARTY_FILTER',
+      party: mockParty
+    }
+
+    const result = actions.setPartyFilter(mockParty)
+    expect(result).toEqual(expected)
+  })
 })
