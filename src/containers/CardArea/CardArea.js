@@ -3,7 +3,7 @@ import Card from '../../components/Card/Card'
 import { connect } from 'react-redux'
 import './CardArea.css'
 
-class CardArea extends Component {
+export class CardArea extends Component {
 
   render() {
     const {presidents} = this.props

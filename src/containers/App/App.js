@@ -1,30 +1,34 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import {fetchData} from '../../thunks/fetchData'
+import { fetchData } from '../../thunks/fetchData'
 import Loading from '../../components/Loading'
 import ErrorMsg from '../../components/ErrorMsg'
 import CardArea from '../CardArea/CardArea'
 
 import './App.css';
 
-class App extends Component {
+export class App extends Component {
 
   componentDidMount() {
+    this.getPresidents()
+  }
+
+  getPresidents = () => {
     this.props.fetchData()
   }
-  
+
   render() {
-    const {isLoading, hasErrored, presidents} = this.props
+    const { isLoading, hasErrored, presidents } = this.props
     return (
       <div className="App">
-       <h1>Presidents and Assholes</h1>
-       {
-         isLoading ? <Loading /> :
-        <CardArea />
-       }
-      {
-        hasErrored !== '' && <ErrorMsg error={hasErrored}/>
-      }
+        <h1>Presidents and Assholes</h1>
+        {
+          isLoading ? <Loading /> :
+            <CardArea />
+        }
+        {
+          hasErrored !== '' && <ErrorMsg error={hasErrored} />
+        }
       </div>
     );
   }
