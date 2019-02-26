@@ -1,6 +1,6 @@
-import {presidentsReducer} from './presidentsReducer'
-import {isLoadingReducer} from './isLoadingReducer'
-import {hasErroredReducer} from './hasErroredReducer'
+import presidentsReducer from './presidentsReducer'
+import isLoadingReducer from './isLoadingReducer'
+import hasErroredReducer from './hasErroredReducer'
 import {combineReducers} from 'redux'
 
 

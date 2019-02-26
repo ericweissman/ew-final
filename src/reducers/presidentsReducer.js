@@ -6,3 +6,5 @@ const presidentsReducer = (state = [], action) => {
       return state
   }
 }
+
+export default presidentsReducer
